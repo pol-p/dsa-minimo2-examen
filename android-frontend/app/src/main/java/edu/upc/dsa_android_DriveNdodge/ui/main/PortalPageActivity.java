@@ -7,6 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import edu.upc.dsa_android_DriveNdodge.R;
+import edu.upc.dsa_android_DriveNdodge.ui.grupo.GrupoActivity;
 import edu.upc.dsa_android_DriveNdodge.ui.profile.ViewProfileActivity;
 import edu.upc.dsa_android_DriveNdodge.ui.ranking.ViewRankingActivity;
 import edu.upc.dsa_android_DriveNdodge.ui.shop.ShopActivity;
@@ -14,7 +15,7 @@ import edu.upc.dsa_android_DriveNdodge.ui.shop.ShopActivity;
 
 public class PortalPageActivity extends AppCompatActivity {
 
-    private Button shopBttn, perfilBttn, rankBttn;
+    private Button shopBttn, perfilBttn, rankBttn, groupBttn, miGrupoBttn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,8 @@ public class PortalPageActivity extends AppCompatActivity {
         shopBttn = findViewById(R.id.shopBttn);
         perfilBttn = findViewById(R.id.perfilBttn);
         rankBttn = findViewById(R.id.rankBttn);
+        groupBttn = findViewById(R.id.grupoBttn1);
+        miGrupoBttn = findViewById(R.id.miGrupoBttn);
 
         shopBttn.setOnClickListener(v -> {
             Intent intent = new Intent(PortalPageActivity.this, ShopActivity.class);
@@ -41,6 +44,16 @@ public class PortalPageActivity extends AppCompatActivity {
         });
         Button logoutButton = findViewById(R.id.logoutButton);
         logoutButton.setOnClickListener(v -> logout());
+
+        groupBttn.setOnClickListener(v->{
+            Intent intent = new Intent(PortalPageActivity.this, GrupoActivity.class);
+            startActivity(intent);
+        });
+
+        miGrupoBttn.setOnClickListener(v->{;
+            Intent intent = new Intent(PortalPageActivity.this, edu.upc.dsa_android_DriveNdodge.ui.grupo.MiGrupoActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void logout() {

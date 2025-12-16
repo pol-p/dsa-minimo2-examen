@@ -32,6 +32,8 @@
         <activity android:name=".ui.main.PortalPageActivity" />
         <activity android:name=".ui.ranking.ViewRankingActivity" />
         <activity android:name=".ui.profile.ViewProfileActivity" />
+        <activity android:name=".ui.grupo.GrupoActivity" />
+        <activity android:name=".ui.grupo.MiGrupoActivity"/>
     </application>
 
 </manifest>

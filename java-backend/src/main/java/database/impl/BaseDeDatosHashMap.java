@@ -29,10 +29,18 @@ public class BaseDeDatosHashMap implements BaseDeDatos {
         Usuario arnau = new Usuario("arnau", "arnau123", "arnau", "munte", "arnau@gmail.com", "10/10/10");
         Usuario pablo = new Usuario("Pablito", "pablo123", "Pablo", "Nse", "pablo@gmail.com", "10/10/10");
         Usuario paula = new Usuario("Paula", "paula123", "Paula", "Nse", "paula@gmail.com", "10/10/10");
+        Usuario usuario1 = new Usuario("usuario1", "usuario1", "usuario1", "Uno", "@gmail.com", "01/01/01");
+        Usuario usuario2 = new Usuario("usuario2", "usuario2", "usuario2", "dos", "@gmail.com", "01/01/01");
+        Usuario usuario3 = new Usuario("usuario3", "usuario3", "usuario3", "tres", "@gmail.com", "01/01/01");
+
         usuarios.put("Paula", paula);
         usuarios.put("admin", admin);
         usuarios.put("arnau", arnau);
         usuarios.put("pablo", pablo);
+        usuarios.put("usuario1", usuario1);
+        usuarios.put("usuario2", usuario2);
+        usuarios.put("usuario3", usuario3);
+
         admin.setMejorPuntuacion(1000);
         arnau.setMejorPuntuacion(1200);
         pablo.setMejorPuntuacion(1500);
